@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IY MOBILES - Your Go-To for Smartphones in Pakistan</title>
+    <meta name="description" content="Discover the latest smartphones from Apple, Samsung, Xiaomi, Vivo, Oppo, Realme, Infinix, Tecno, and more at IY MOBILES. Best prices and customer service in Multan, Pakistan.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* General Body Styles */
+        body {
+            /* IMPORTANT: REPLACE THIS URL WITH YOUR ACTUAL BACKGROUND IMAGE URL! */
+            background-image: url("https://scontent.xx.fbcdn.net/o1/v/t0/f2/m253/AQNsUlJeKs-nbr-xrgMsBAzFVRFLX3jnfvEFvWYAf3c0kVL1UQg33u0m37v5ZMLW4uIPI76VTG69Oiwg_wHewVFG1s8USZR8OLGAwqqOBiPfte_cmYNGxesHUdcitD7v.jpeg?_nc_ht=scontent.xx.fbcdn.net&_nc_gid=UtUUKf91hexiTTlleBizGg&_nc_cat=103&_nc_oc=AdkJxVjonQY25THlqqtfUDvEI-84PqV3QKaO3YSj0pIU3z5219es1AxNqKHHa_bB3fKMSfOrNFmR5isjnUsdzH_0&ccb=9-4&oh=00_AfvhxRO_7yr5Aztl6zM_GNDF7qFEctVghxQ55wwp47ML0A&oe=6983C684&_nc_sid=5b3566");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #f8f8f8; /* Light text for readability on dark background */
+            line-height: 1.6;
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+
+        /* Container for content - helps keep content organized and centered */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent dark header */
+            padding: 15px 0;
+            text-align: center;
+            border-bottom: 2px solid #007bff; /* Accent color border */
+            position: sticky; /* Makes the header stick to the top */
+            top: 0;
+            z-index: 1000; /* Ensures header is above other content */
+        }
+
+        header .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #007bff; /* Bright color for the business name */
+            font-size: 3.2em; /* Slightly larger for prominence */
+            letter-spacing: 3px; /* More spaced out */
+            text-transform: uppercase;
+            font-weight: 900; /* Extra bold */
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Glowing effect */
+        }
+        /* Style for image logo if used */
+        .logo-img {
+            max-height: 70px; /* Adjust as needed */
+            margin-right: 15px; /* Spacing between logo and text */
+            object-fit: contain;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #f8f8f8;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Main Content Sections - consistent styling for all sections */
+        section {
+            background-color: rgba(20, 20, 20, 0.85); /* Darker, semi-transparent background for sections */
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+            text-align: center;
+        }
+
+        section h2 {
+            color: #007bff;
+            font-size: 2.5em;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            display: inline-block; /* Makes border-bottom only as wide as text */
+        }
+
+        /* Hero Section - prominent first section of the page */
+        #hero {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 80px 40px;
+            margin-top: 0;
+            border-radius: 0 0 10px 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+        }
+
+        #hero h2 {
+            font-size: 3.5em;
+            color: #fff;
+            margin-bottom: 15px;
+            border-bottom: none; /* No border for hero h2 */
+            padding-bottom: 0;
+        }
+
+        #hero p {
+            font-size: 1.3em;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+        }
+
+        /* General Button Styling */
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px; /* Pill-shaped button */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            cursor: pointer;
+            border: none; /* Remove default button border */
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px); /* Slight lift effect on hover */
+        }
+
+        /* Product Grid - responsive layout for product cards */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid columns */
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            background-color: rgba(30, 30, 30, 0.9); /* Slightly lighter card background */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            text-align: left;
+            transition: transform 0.2s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: 200px; /* Fixed height for product images */
+            object-fit: contain; /* Keeps image aspect ratio, fits within box */
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background-color: #fff; /* White background for image area */
+            padding: 10px;
+        }
+
+        .product-card h3 {
+            color: #007bff;
+            font-size: 1.6em;
+            margin-top: 0;
+            margin-bottom: 5px; /* Reduced margin for specs */
+        }
+        .product-card .specs {
+            font-size: 0.9em;
+            color: #ccc;
+            margin-bottom: 5px;
+        }
+        .product-card .detail-list {
+            font-size: 0.85em;
+            color: #bbb;
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+        .product-card .detail-list li {
+            margin-bottom: 3px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .product-card .detail-list li strong {
+            color: #f8f8f8;
+            min-width: 60px; /* Align labels */
+            margin-right: 5px;
+        }
+
+        .product-card p {
+            font-size: 1em;
+            color: #bbb;
+        }
+
+        .price {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #28a745; /* Green for price */
+            margin-top: 15px;
+            display: block;
+        }
+
+        /* Brand Spotlight Grid - responsive layout for brand cards */
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid for brands */
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .brand-card {
+            background-color: rgba(30, 30, 30, 0.9);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .brand-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .brand-card h3 {
+            color: #007bff;
+            font-size: 1.8em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .brand-card p {
+            font-size: 1em;
+            color: #bbb;
+            margin-bottom: 10px;
+        }
+
+        /* Delivery/Pickup Info Section */
+        #delivery-info {
+            background-color: rgba(20, 20, 20, 0.9);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        #delivery-info h2 {
+            color: #007bff;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        #delivery-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        #delivery-info li {
+            background-color: rgba(30, 30, 30, 0.9);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border-left: 5px solid #28a745; /* Green accent */
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        #delivery-info li .icon {
+            font-size: 1.8em;
+            color: #28a745;
+            flex-shrink: 0;
+        }
+        #delivery-info li p {
+            margin: 0;
+            color: #ddd;
+        }
+        #delivery-info li p strong {
+            color: #fff;
+            font-size: 1.1em;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #f8f8f8;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 50px;
+            border-top: 2px solid #007bff;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        .footer-links a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        /* Contact & Customer Service Section Specifics */
+        #contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: grid;
+            gap: 15px;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        #contact-form label {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #contact-form input[type="text"],
+        #contact-form input[type="email"],
+        #contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        #contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        #contact-form button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        #contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* FAQ specific styles - for individual Q&A items */
+        .faq-item {
+            text-align: left;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: rgba(30, 30, 30, 0.9);
+            border-radius: 8px;
+        }
+
+        .faq-item h3 {
+            color: #007bff;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+
+        .faq-item p {
+            color: #bbb;
+            margin-bottom: 0;
+        }
+
+        /* Customer Service Contact block */
+        .customer-service-contact {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: rgba(30, 30, 30, 0.9);
+            border-radius: 8px;
+            color: #eee;
+        }
+        .customer-service-contact p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .customer-service-contact a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .customer-service-contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Live Chat Call-to-Action block */
+        #live-chat-cta {
+            margin-top: 30px;
+            padding: 25px;
+            background-color: rgba(30, 30, 30, 0.9);
+            border-radius: 8px;
+            color: #eee;
+        }
+        #live-chat-cta p {
+            font-size: 1.2em;
+        }
+
+        /* How to Get Online Section */
+        #get-online-info {
+            background-color: rgba(20, 20, 20, 0.9);
+            padding: 30px;
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            text-align: left;
+        }
+        #get-online-info h2 {
+            text-align: center;
+            color: #007bff;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        #get-online-info h3 {
+            color: #fff;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        #get-online-info p, #get-online-info ul {
+            color: #ddd;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        #get-online-info ul {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+        #get-online-info li {
+            margin-bottom: 5px;
+        }
+        #get-online-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        #get-online-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design Adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+                letter-spacing: 2px;
+            }
+            nav ul li {
+                margin: 0 8px;
+            }
+            nav ul li a {
+                padding: 3px 6px;
+            }
+            #hero h2 {
+                font-size: 2.5em;
+            }
+            #hero p {
+                font-size: 1em;
+            }
+            section {
+                padding: 20px;
+            }
+            section h2 {
+                font-size: 2em;
+            }
+            .btn {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+            .product-grid, .brand-grid {
+                grid-template-columns: 1fr; /* Stack columns on small screens */
+            }
+            header .logo-container {
+                 flex-direction: column;
+            }
+            .logo-img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            #delivery-info li {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            #delivery-info li .icon {
+                margin-bottom: 10px;
+            }
+            #delivery-info ul {
+                padding-left: 0;
+            }
+        }
+    </style>
+    <!-- Font Awesome for icons (delivery/pickup) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <!--
+                    TO USE AN IMAGE LOGO:
+                    1. Uncomment the line below.
+                    2. Replace "YOUR_LOGO_IMAGE_URL_HERE" with the actual URL of your logo image.
+                    3. You might need to adjust 'max-height' in the .logo-img CSS rule.
+                    4. If you use an image logo, you might want to hide the H1 text below
+                       or use CSS to visually hide it for accessibility while keeping it for screen readers.
+                -->
+                <!-- <img src="YOUR_LOGO_IMAGE_URL_HERE" alt="IY Mobiles Logo" class="logo-img"> -->
+                <h1>IY MOBILES</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#brands">Brands</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#customer-service">Customer Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Experience Tomorrow's Technology, Today!</h2>
+            <p>
+                At IY MOBILES, we bring you the latest and most innovative smartphones
+                from leading brands. Quality, performance, and style are guaranteed.
+            </p>
+            <a href="#products" class="btn">Explore Our Collection</a>
+        </div>
+    </section>
+
+    <section id="products" class="container">
+        <h2>Our Latest Smartphones</h2>
+        <div class="product-grid">
+            <!-- Apple iPhone 15 Pro Max -->
+            <div class="product-card">
+                <img src="https://i.ibb.co/L5Fm0J3/iphone-15-pro-max-blue.jpg" alt="Apple iPhone 15 Pro Max">
+                <h3>Apple iPhone 15 Pro Max</h3>
+                <p class="specs">8GB RAM / 256GB ROM</p>
+                <ul class="detail-list">
+                    <li><strong>Display:</strong> 6.7" Super Retina XDR OLED, 120Hz</li>
+                    <li><strong>Camera:</strong> 48MP Main, 12MP Ultra-wide, 12MP Telephoto (5x optical zoom)</li>
+                    <li><strong>Battery:</strong> 4441 mAh, Fast Charging (50% in 30 min)</li>
+                    <li><strong>Processor:</strong> Apple A17 Pro Bionic (3nm)</li>
+                    <li><strong>OS:</strong> iOS 17</li>
+                    <li><strong>Graphics:</strong> Apple GPU (6-core graphics)</li>
+                    <li><strong>Features:</strong> Titanium frame, Dynamic Island, Always-On display, IP68 water resistance</li>
+                </ul>
+                <span class="price">PKR 530,000</span>
+                <a href="#" class="btn" style="background-color: #28a745; margin-top: 15px;">View Details</a>
+            </div>
+
+            <!-- Samsung Galaxy S24 Ultra -->
+            <div class="product-card">
+                <img src="https://i.ibb.co/JBRx8c8/samsung-galaxy-s24-ultra.jpg" alt="Samsung Galaxy S24 Ultra">
+                <h3>Samsung Galaxy S24 Ultra</h3>
+                <p class="specs">12GB RAM / 512GB ROM</p>
+                <ul class="detail-list">
+                    <li><strong>Display:</strong> 6.8" Dynamic AMOLED 2X, 120Hz, 2600 nits peak</li>
+                    <li><strong>Camera:</strong> 200MP Main, 12MP Ultra-wide, 10MP Telephoto (3x), 50MP Periscope (5x)</li>
+                    <li><strong>Battery:</strong> 5000 mAh, 45W Fast Charging (65% in 30 min)</li>
+                    <li><strong>Processor:</strong> Qualcomm Snapdragon 8 Gen 3 (4nm)</li>
+                    <li><strong>OS:</strong> Android 14, One UI 6.1</li>
+                    <li><strong>Graphics:</strong> Adreno 750 GPU</li>
+                    <li><strong>Features:</strong> S Pen integrated, Galaxy AI, Titanium frame, IP68 water resistance</li>
+                </ul>
+                <span class="price">PKR 450,000</span>
+                <a href="#" class="btn" style="background-color: #28a745; margin-top: 15px;">View Details</a>
+            </div>
+
+            <!-- Oppo Reno 11 Pro -->
+            <div class="product-card">
+                <img src="https://i.ibb.co/D80k54X/oppo-reno11-pro.jpg" alt="Oppo Reno 11 Pro">
+                <h3>Oppo Reno 11 Pro</h3>
+                <p class="specs">12GB RAM / 256GB ROM</p>
+                <ul class="detail-list">
+                    <li><strong>Display:</strong> 6.7" AMOLED, 120Hz, 950 nits peak</li>
+                    <li><strong>Camera:</strong> 50MP Main, 32MP Telephoto (2x), 8MP Ultra-wide</li>
+                    <li><strong>Battery:</strong> 4600 mAh, 80W SuperVOOC Fast Charging (100% in 28 min)</li>
+                    <li><strong>Processor:</strong> MediaTek Dimensity 8200 (4nm)</li>
+                    <li><strong>OS:</strong> Android 14, ColorOS 14</li>
+                    <li><strong>Graphics:</strong> Mali-G610 MC6 GPU</li>
+                    <li><strong>Features:</strong> Ultra-clear Portrait Camera, Slim Design</li>
+                </ul>
+                <span class="price">PKR 155,000</span>
+                <a href="#" class="btn" style="background-color: #28a745; margin-top: 15px;">View Details</a>
+            </div>
+
+            <!-- Vivo X100 Pro -->
+            <div class="product-card">
+                <img src="https://i.ibb.co/YyY2Z1C/vivo-x100-pro.jpg" alt="Vivo X100 Pro">
+                <h3>Vivo X100 Pro</h3>
+                <p class="specs">16GB RAM / 512GB ROM</p>
+                <ul class="detail-list">
+                    <li><strong>Display:</strong> 6.78" LTPO AMOLED, 120Hz, 3000 nits peak</li>
+                    <li><strong>Camera:</strong> 50MP Main (ZEISS), 50MP Periscope Telephoto (4.3x), 50MP Ultra-wide</li>
+                    <li><strong>Battery:</strong> 5400 mAh, 100W FlashCharge (50% in 12 min)</li>
+                    <li><strong>Processor:</strong> MediaTek Dimensity 9300 (4nm)</li>
+                    <li><strong>OS:</strong> Android 14, Funtouch OS 14</li>
+                    <li><strong>Graphics:</strong> Immortalis-G720 MC12 GPU</li>
+                    <li><strong>Features:</strong> ZEISS Optics, IP68 water resistance, Powerful flagship performance</li>
+                </ul>
+                <span class="price">PKR 290,000</span>
+                <a href="#" class="btn" style="background-color: #28a745; margin-top: 15px;">View Details</a>
+            </div>
+
+            <!-- Xiaomi Redmi Note 13 Pro+ -->
+            <div class="product-card">
+                <img src="https://i.ibb.co/m0fWjP0/xiaomi-redmi-note-13-pro-plus.jpg" alt="Xiaomi Redmi Note 13 Pro+">
+                <h3>Xiaomi Redmi Note 13 Pro+</h3>
+                <p class="specs">8GB RAM / 256GB ROM</p>
+                <ul class="detail-list">
+                    <li><strong>Display:</strong> 6.67" AMOLED, 120Hz, 1800 nits peak</li>
+                    <li><strong>Camera:</strong> 200MP Main, 8MP Ultra-wide, 2MP Macro</li>
+                    <li><strong>Battery:</strong> 5000 mAh, 120W HyperCharge (100% in 19 min)</li>
+                    <li><strong>Processor:</strong> MediaTek Dimensity 7200 Ultra (4nm)</li>
+                    <li><strong>OS:</strong> Android 13, MIUI 14</li>
+                    <li><strong>Graphics:</strong> Mali-G610 MC4 GPU</li>
+                    <li><strong>Features:</strong> IP68 water/dust resistant, Curved display, Fast charging champion</li>
+                </ul>
+                <span class="price">PKR 92,000</span>
+                <a href="#" class="btn" style="background-color: #28a745; margin-top: 15px;">View Details</a>
+            </div>
+
+            <!-- Realme 11 Pro+ -->
+            <div class="product-card">
+                <img src="https://i.ibb.co/c182K5P/realme-11-pro-plus.jpg" alt="Realme 11 Pro+">
+                <h3>Realme 11 Pro+</h3>
+                <p class="specs">12GB RAM / 512GB ROM</p>
+                <ul class="detail-list">
+                    <li><strong>Display:</strong> 6.7" AMOLED, 120Hz, 950 nits peak</li>
+                    <li><strong>Camera:</strong> 200MP Main, 8MP Ultra-wide, 2MP Macro</li>
+                    <li><strong>Battery:</strong> 5000 mAh, 100W SuperVOOC Charge (100% in 26 min)</li>
+                    <li><strong>Processor:</strong> MediaTek Dimensity 7050 (6nm)</li>
+                    <li><strong>OS:</strong> Android 13, Realme UI 4.0</li>
+                    <li><strong>Graphics:</strong> Mali-G68 MC4 GPU</li>
+                    <li><strong>Features:</strong> OIS Camera, Premium Vegan Leather Design</li>
+                </ul>
+                <span class="price">PKR 125,000</span>
+                <a href="#" class="btn" style="background-color: #28a745; margin-top: 15px;">View Details</a>
+            </div>
+
+            <!-- Infinix Note 40 Pro -->
+            <div class="product-card">
+                <img src="https://i.ibb.co/Vmxr81k/infinix-note-40-pro.jpg" alt="Infinix Note 40 Pro">
+                <h3>Infinix Note 40 Pro</h3>
+                <p class="specs">8GB RAM / 256GB ROM</p>
+                <ul class="detail-list">
+                    <li><strong>Display:</strong> 6.78" AMOLED, 120Hz, 1300 nits peak</li>
+                    <li><strong>Camera:</strong> 108MP Main, 2MP Macro, 2MP Depth</li>
+                    <li><strong>Battery:</strong> 5000 mAh, 45W All-Round FastCharge (50% in 26 min)</li>
+                    <li><strong>Processor:</strong> MediaTek Helio G99 Ultimate (6nm)</li>
+                    <li><strong>OS:</strong> Android 14, XOS 14</li>
+                    <li><strong>Graphics:</strong> Mali-G57 MC2 GPU</li>
+                    <li><strong>Features:</strong> Wireless MagCharge, Curved display, IP53 resistance</li>
+                </ul>
+                <span class="price">PKR 68,000</span>
+                <a href="#" class="btn" style="background-color: #28a745; margin-top: 15px;">View Details</a>
+            </div>
+
+            <!-- TECNO CAMON 30 Pro -->
+            <div class="product-card">
+                <img src="https://i.ibb.co/jGGxW0J/tecno-camon-30-pro.jpg" alt="TECNO CAMON 30 Pro">
+                <h3>TECNO CAMON 30 Pro</h3>
+                <p class="specs">12GB RAM / 256GB ROM</p>
+                <ul class="detail-list">
+                    <li><strong>Display:</strong> 6.78" AMOLED, 120Hz</li>
+                    <li><strong>Camera:</strong> 50MP Main (OIS), 50MP Ultra-wide, 2MP Depth</li>
+                    <li><strong>Battery:</strong> 5000 mAh, 70W Ultra Charge (100% in 45 min)</li>
+                    <li><strong>Processor:</strong> MediaTek Dimensity 8200 Ultimate (4nm)</li>
+                    <li><strong>OS:</strong> Android 14, HIOS 14</li>
+                    <li><strong>Graphics:</strong> Mali-G610 MC6 GPU</li>
+                    <li><strong>Features:</strong> Advanced low-light photography, Stylish design, NFC</li>
+                </ul>
+                <span class="price">PKR 95,000</span>
+                <a href="#" class="btn" style="background-color: #28a745; margin-top: 15px;">View Details</a>
+            </div>
+
+            <!-- Google Pixel 8 Pro -->
+            <div class="product-card">
+                <img src="https://i.ibb.co/7t5Q043/google-pixel-8-pro.jpg" alt="Google Pixel 8 Pro">
+                <h3>Google Pixel 8 Pro</h3>
+                <p class="specs">12GB RAM / 256GB ROM</p>
+                <ul class="detail-list">
+                    <li><strong>Display:</strong> 6.7" LTPO OLED, 120Hz, 2400 nits peak</li>
+                    <li><strong>Camera:</strong> 50MP Main (OIS), 48MP Telephoto (5x), 48MP Ultra-wide</li>
+                    <li><strong>Battery:</strong> 5050 mAh, 30W Fast Charging</li>
+                    <li><strong>Processor:</strong> Google Tensor G3 (4nm)</li>
+                    <li><strong>OS:</strong> Android 14 (Pure Android)</li>
+                    <li><strong>Graphics:</strong> Immortalis-G715s MC10 GPU</li>
+                    <li><strong>Features:</strong> Best-in-class computational photography, 7 years OS updates, AI features</li>
+                </ul>
+                <span class="price">PKR 260,000</span>
+                <a href="#" class="btn" style="background-color: #28a745; margin-top: 15px;">View Details</a>
+            </div>
+
+            <!-- Motorola Edge 40 Neo -->
+            <div class="product-card">
+                <img src="https://i.ibb.co/yY1H28L/motorola-edge-40-neo.jpg" alt="Motorola Edge 40 Neo">
+                <h3>Motorola Edge 40 Neo</h3>
+                <p class="specs">12GB RAM / 256GB ROM</p>
+                <ul class="detail-list">
+                    <li><strong>Display:</strong> 6.55" P-OLED, 144Hz, 1300 nits peak</li>
+                    <li><strong>Camera:</strong> 50MP Main (OIS), 13MP Ultra-wide</li>
+                    <li><strong>Battery:</strong> 5000 mAh, 68W TurboPower (50% in 15 min)</li>
+                    <li><strong>Processor:</strong> MediaTek Dimensity 7030 (6nm)</li>
+                    <li><strong>OS:</strong> Android 13 (Near-stock Android)</li>
+                    <li><strong>Graphics:</strong> Mali-G610 MC3 GPU</li>
+                    <li><strong>Features:</strong> IP68 water/dust resistant, Slim & lightweight, Vegan leather options</li>
+                </ul>
+                <span class="price">PKR 85,000</span>
+                <a href="#" class="btn" style="background-color: #28a745; margin-top: 15px;">View Details</a>
+            </div>
+
+            <!-- Nothing Phone (2) -->
+            <div class="product-card">
+                <img src="https://i.ibb.co/0V8xW24/nothing-phone-2.jpg" alt="Nothing Phone (2)">
+                <h3>Nothing Phone (2)</h3>
+                <p class="specs">12GB RAM / 256GB ROM</p>
+                <ul class="detail-list">
+                    <li><strong>Display:</strong> 6.7" LTPO OLED, 120Hz, 1600 nits peak</li>
+                    <li><strong>Camera:</strong> 50MP Main (OIS), 50MP Ultra-wide</li>
+                    <li><strong>Battery:</strong> 4700 mAh, 45W Fast Charging (100% in 55 min)</li>
+                    <li><strong>Processor:</strong> Qualcomm Snapdragon 8+ Gen 1 (4nm)</li>
+                    <li><strong>OS:</strong> Android 13, Nothing OS 2.5</li>
+                    <li><strong>Graphics:</strong> Adreno 730 GPU</li>
+                    <li><strong>Features:</strong> Unique Glyph Interface, Transparent design, Wireless charging</li>
+                </ul>
+                <span class="price">PKR 170,000</span>
+                <a href="#" class="btn" style="background-color: #28a745; margin-top: 15px;">View Details</a>
+            </div>
+
+            <!-- Honor X9b -->
+            <div class="product-card">
+                <img src="https://i.ibb.co/VMybJdC/honor-x9b.jpg" alt="Honor X9b">
+                <h3>Honor X9b</h3>
+                <p class="specs">12GB RAM / 256GB ROM</p>
+                <ul class="detail-list">
+                    <li><strong>Display:</strong> 6.78" AMOLED, 120Hz, 1200 nits peak</li>
+                    <li><strong>Camera:</strong> 108MP Main, 5MP Ultra-wide, 2MP Macro</li>
+                    <li><strong>Battery:</strong> 5800 mAh, 35W Fast Charging</li>
+                    <li><strong>Processor:</strong> Qualcomm Snapdragon 6 Gen 1 (4nm)</li>
+                    <li><strong>OS:</strong> Android 13, MagicOS 7.2</li>
+                    <li><strong>Graphics:</strong> Adreno 710 GPU</li>
+                    <li><strong>Features:</strong> Ultra-Durable Display (SGS 5-star drop resistance), Massive battery</li>
+                </ul>
+                <span class="price">PKR 105,000</span>
+                <a href="#" class="btn" style="background-color: #28a745; margin-top: 15px;">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="delivery-info" class="container">
+        <h2>How to Get Your New Mobile Phone from IY MOBILES</h2>
+        <p>We make it easy and convenient for you to get your hands on the latest smartphones!</p>
+        <ul>
+            <li>
+                <i class="fas fa-shipping-fast icon"></i>
+                <div>
+                    <p><strong>Nationwide Delivery Across Pakistan</strong></p>
+                    <p>Order online from anywhere in Pakistan, and we'll deliver your phone safely and swiftly to your doorstep. All deliveries are insured and handled with care.</p>
+                </div>
+            </li>
+            <li>
+                <i class="fas fa-store icon"></i>
+                <div>
+                    <p><strong>In-Store Pickup in Multan</strong></p>
+                    <p>Prefer to pick up your phone in person? Visit our store in Multan, Punjab. You can check the phone, ask our experts questions, and take it home right away!</p>
+                    <p><em>(Please check our <a href="#contact">Contact</a> section for store location and hours)</em></p>
+                </div>
+            </li>
+            <li>
+                <i class="fas fa-hand-holding-usd icon"></i>
+                <div>
+                    <p><strong>Secure Payment Options</strong></p>
+                    <p>We offer various secure payment methods for your convenience, including Cash on Delivery (COD) for most areas, bank transfers, and more.</p>
+                </div>
+            </li>
+        </ul>
+        <a href="#products" class="btn" style="background-color: #007bff; margin-top: 30px;">Start Shopping Now!</a>
+    </section>
+
+    <section id="brands" class="container">
+        <h2>Shop By Brand</h2>
+        <p>Explore a wide range of smartphones from your favorite brands.</p>
+        <div class="brand-grid">
+            <div class="brand-card">
+                <h3>Apple iPhone</h3>
+                <p>Premium, high-end smartphones with iOS, known for superior build quality and ecosystem integration.</p>
+                <p>Prices from: PKR 150,000</p>
+                <a href="#" class="btn" style="background-color: #6c757d;">View Apple</a>
+            </div>
+            <div class="brand-card">
+                <h3>Samsung</h3>
+                <p>Widest range of Android devices, from premium Galaxy S/Fold series to budget A/M series.</p>
+                <p>Prices from: PKR 40,000</p>
+                <a href="#" class="btn" style="background-color: #6c757d;">View Samsung</a>
+            </div>
+            <div class="brand-card">
+                <h3>Oppo</h3>
+                <p>Focuses on camera capabilities (portraits/selfies) and stylish designs, targeting mid-to-high-end.</p>
+                <p>Prices from: PKR 35,000</p>
+                <a href="#" class="btn" style="background-color: #6c757d;">View Oppo</a>
+            </div>
+            <div class="brand-card">
+                <h3>Vivo</h3>
+                <p>Stylish designs and great performance, often emphasizing photography and sleek aesthetics.</p>
+                <p>Prices from: PKR 30,000</p>
+                <a href="#" class="btn" style="background-color: #6c757d;">View Vivo</a>
+            </div>
+            <div class="brand-card">
+                <h3>Xiaomi / Redmi</h3>
+                <p>"Value-for-money" devices with high-end specifications, often leading in fast-charging technology.</p>
+                <p>Prices from: PKR 25,000</p>
+                <a href="#" class="btn" style="background-color: #6c757d;">View Xiaomi</a>
+            </div>
+            <div class="brand-card">
+                <h3>Realme</h3>
+                <p>Popular in budget-to-mid-range, offering high refresh rate displays and large batteries at competitive prices.</p>
+                <p>Prices from: PKR 28,000</p>
+                <a href="#" class="btn" style="background-color: #6c757d;">View Realme</a>
+            </div>
+            <div class="brand-card">
+                <h3>Infinix</h3>
+                <p>Affordable tech, big batteries, and often gaming-centric features, popular in emerging markets.</p>
+                <p>Prices from: PKR 20,000</p>
+                <a href="#" class="btn" style="background-color: #6c757d;">View Infinix</a>
+            </div>
+            <div class="brand-card">
+                <h3>Tecno</h3>
+                <p>Strong presence in entry-level and budget segments, known for reliable smartphones with decent features.</p>
+                <p>Prices from: PKR 20,000</p>
+                <a href="#" class="btn" style="background-color: #6c757d;">View Tecno</a>
+            </div>
+            <div class="brand-card">
+                <h3>Google Pixel</h3>
+                <p>Known for "stock" Android experience, advanced computational photography, and timely software updates.</p>
+                <p>Prices from: PKR 100,000</p>
+                <a href="#" class="btn" style="background-color: #6c757d;">View Google</a>
+            </div>
+            <div class="brand-card">
+                <h3>Motorola</h3>
+                <p>Known for clean Android UI and reliable mid-range options with unique features and solid build quality.</p>
+                <p>Prices from: PKR 45,000</p>
+                <a href="#" class="btn" style="background-color: #6c757d;">View Motorola</a>
+            </div>
+            <div class="brand-card">
+                <h3>Nothing</h3>
+                <p>A newer brand focusing on unique design (transparent back) and clean software with innovative user experience.</p>
+                <p>Prices from: PKR 80,000</p>
+                <a href="#" class="btn" style="background-color: #6c757d;">View Nothing</a>
+            </div>
+            <div class="brand-card">
+                <h3>Honor</h3>
+                <p>Focusing on design and camera technology, offering compelling smartphones across various price points.</p>
+                <p>Prices from: PKR 60,000</p>
+                <a href="#" class="btn" style="background-color: #6c757d;">View Honor</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About IY MOBILES</h2>
+        <p>
+            Founded with a passion for technology and a commitment to customer satisfaction,
+            IY MOBILES strives to be your most trusted source for mobile phones in Pakistan.
+            We carefully curate our selection to ensure every device meets our high standards for quality,
+            innovation, and value. Our mission is to connect you with the perfect mobile
+            experience that fits your needs and budget.
+        </p>
+        <p>
+            We believe in transparency, competitive pricing, and exceptional service.
+            Your satisfaction is our priority! Located right here in Multan.
+        </p>
+    </section>
+
+    <section id="customer-service" class="container">
+        <h2>Customer Service</h2>
+        <p>We're here to help! Find answers to common questions or reach out to our support team.</p>
+
+        <div id="live-chat-cta">
+            <h3>Need immediate help?</h3>
+            <p>Our live chat is currently online! Click the button below to chat with a representative.</p>
+            <a href="#" class="btn">Start Live Chat</a>
+            <!-- IMPORTANT: In a real site, you'd integrate a live chat widget script here -->
+        </div>
+
+        <div class="customer-service-contact">
+            <h3>Direct Contact</h3>
+            <p><strong>Phone:</strong> <a href="tel:+923221072469">+923221072469</a></p>
+            <p><strong>Email:</strong> <a href="mailto:jamzafiaz@gmail.com">jamzafiaz@gmail.com</a></p>
+            <p>Our support team is available Monday - Friday, 9 AM - 5 PM (Pakistan Standard Time).</p>
+        </div>
+
+        <h3>Frequently Asked Questions (FAQ)</h3>
+        <div class="faq-item">
+            <h3>Q: How can I track my order?</h3>
+            <p>A: Once your order ships, you will receive an email with a tracking number and a link to track your package's journey.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Q: What is your return policy?</h3>
+            <p>A: We offer a 7-day return policy for unused items in original packaging. Please visit our detailed returns page for more info.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Q: Do you offer delivery across Pakistan?</h3>
+            <p>A: Yes, we offer nationwide delivery across all major cities and towns in Pakistan!</p>
+        </div>
+        <div class="faq-item">
+            <h3>Q: Are your phones PTA approved?</h3>
+            <p>A: Absolutely! All phones sold by IY MOBILES are 100% PTA approved and come with standard manufacturer warranties.</p>
+        </div>
+        <!-- IMPORTANT: Add more FAQ items here relevant to your business -->
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Send Us a Message</h2>
+        <p>Use the form below for any general inquiries or if you couldn't find your answer in the Customer Service section.</p>
+        <form id="contact-form" action="#" method="POST"> <!-- action="#" means form won't submit anywhere yet -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p style="margin-top:20px; font-size:0.9em; color:#bbb;">
+            For urgent queries, please call us at <a href="tel:+923221072469" style="color:#007bff;">+923221072469</a>.
+        </p>
+    </section>
+
+    <section id="get-online-info" class="container">
+        <h2>How Your Website Reaches Customers (www.iymobiles.com)</h2>
+        <p>For your customers to see your beautiful new website, it needs to be hosted online. Here's a quick guide to how that works:</p>
+
+        <h3>1. Secure Your Web Address (Domain Name)</h3>
+        <ul>
+            <li>**What it is:** This is your unique website name, like `www.iymobiles.com`.</li>
+            <li>**How to get it:** You purchase a domain name from a "domain registrar" (e.g., GoDaddy, Namecheap). This is an annual registration.</li>
+            <li>**Why it's important:** It's how customers will find and remember your online store.</li>
+        </ul>
+
+        <h3>2. Choose Web Hosting</h3>
+        <ul>
+            <li>**What it is:** This is like renting space on a special computer (a server) that's always connected to the internet. Your website files (HTML, images, etc.) will live here.</li>
+            <li>**How to get it:** You sign up with a web hosting provider (e.g., Hostinger, Bluehost). For a simple HTML site like yours, "shared hosting" is usually affordable and sufficient.</li>
+            <li>**Why it's important:** It makes your website files accessible to anyone on the internet.</li>
+        </ul>
+
+        <h3>3. Upload Your Website Files</h3>
+        <ul>
+            <li>**What to upload:** All the files I've helped you create: your `index.html` file, and all the image files (which you'll update with your own product photos!).</li>
+            <li>**How to upload (Easiest Method):**
+                <ol>
+                    <li>Your web hosting provider will give you access to a **"Control Panel"** (often called cPanel).</li>
+                    <li>Inside, look for a **"File Manager"** tool.</li>
+                    <li>Navigate to the `public_html` or `www` folder (this is where your main website files go).</li>
+                    <li>Use the upload feature in the File Manager to transfer your `index.html` and all image files into this `public_html` folder.</li>
+                </ol>
+            </li>
+            <li>**Alternative (for basic sites):** For static HTML sites, free services like <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> can host your site directly from a code repository.</li>
+        </ul>
+        <p style="margin-top: 20px;">Once these steps are completed, your customers will be able to visit `www.iymobiles.com` and explore IY MOBILES!</p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Muhammad Anas - IY MOBILES. All rights reserved.</p>
+            <p><strong>Location:</strong> Multan, Punjab, Pakistan</p>
+            <p><strong>Call Us:</strong> <a href="tel:+923221072469">+923221072469</a></p>
+            <div class="footer-links">
+                <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+            <p>Crafted with <span style="color: #007bff;">&hearts;</span> for your tech needs.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
